@@ -50,6 +50,8 @@ nav span a, footer a {
 }
 
 .google-apps {
+    height: 38px;
+    width: 38px;
     background-color: #fff;
     align-items: center;
     border-radius: 50%;
@@ -89,7 +91,7 @@ main {
     flex-direction: column;
     align-items: center;
     align-content: start;
-    min-height: 80vh;
+    min-height: 70vh;
     position: relative;
 }
 
@@ -134,7 +136,7 @@ main {
     box-sizing: border-box;
     padding: 0;
     min-width: 10vw;
-    max-width: 60vw;
+    width: 35vw;
 }
 
 
@@ -169,24 +171,6 @@ main {
     opacity: 1;
     border-color: #c4c4c4;
     box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
-}
-
-.languages {
-    color:#6d6d6d;
-    font-family: arial, sans-serif;
-    padding: 0;
-    margin: 0;
-}
-
-.languages p {
-    text-align: center;
-    padding: 0;
-    margin: 0;
-}
-
-.languages a {
-    padding: 0 3px;
-    margin: 0;
 }
 
 /* -----------------------------------footer------------------------------ */
