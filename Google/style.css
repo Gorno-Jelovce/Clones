@@ -1,0 +1,267 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    font-size: 14px;
+    font-family: Arial, sans-serif;
+    color: #202124;
+    background: #fff;
+    height: 100vh;
+}
+
+/* ----------------header--------------- */
+
+header {
+    margin: 0px;
+    padding: 6px;
+    font-size: 13px;
+    font-family: Roboto, Arial, sans-serif;
+    max-height: 20vh;
+}
+
+nav {
+    display: flex;
+    justify-content: right;
+}
+
+nav div {
+    padding: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav span {
+    flex: 1 0 auto;
+    padding: 0 8px;
+    margin: 0;
+}
+
+a, button {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+nav span a, footer a {
+    color: #202124;
+}
+
+.google-apps {
+    background-color: #fff;
+    align-items: center;
+    border-radius: 50%;
+    border: #fff;
+    padding: 6px;
+    opacity:  0.6;
+}
+
+.google-apps:hover {
+    background-color: rgba(60,64,67,.08);
+}
+
+
+.sign-in {
+    background-color: #1a73e8;
+    color:#fff;
+    font-size: 14px;
+    border: #fff 1px;
+    border-radius: 4px;
+    padding: 10px 26px;
+    margin: 0px;
+    font-family: Google Sans,Roboto,Helvetica,Arial,sans-serif;
+
+}
+
+.sign-in:hover {
+    background-color: #1b66c9;
+    box-shadow: 0 1px 0 rgba(0,0,0,0.15);
+}
+
+
+/* --------------------------------main--------------------------------- */
+
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: start;
+    min-height: 80vh;
+    position: relative;
+}
+
+.search {
+    padding: 20px;
+}
+
+.search-bar {
+    display: flex;
+    gap: 10px;
+    flex-direction: row;
+    align-items: center;
+    flex: 1;
+    margin-bottom: 20px;
+    padding: 6px 12px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 25px;
+    overflow:hidden;
+}
+
+.search-bar:hover, .search-bar:focus-within {
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.25);
+    border-color: #fff;
+}
+
+.search-bar span {
+    flex: 0 1 auto;
+    padding: 5px 2px;
+}
+
+.search-bar .search-box input {
+    border: 0;
+    flex : 1;
+    box-sizing: border-box;
+    padding: 0;
+    width: min( 440px, max(60vw,350px) );
+}
+
+.search-bar .search-box input:focus {
+    outline: none;
+}
+
+.search-buttons {
+    font-size: 14px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+}
+
+.search-buttons button {
+    margin: 0 6px;
+    padding: 10px 15px;
+    border: 1px solid #fff;
+    border-radius: 4px;
+    color: #28292b;
+    background-color: #f8f8f8;
+    opacity: 0.9;
+    font-family: arial, sans-serif;
+    font-size: 14px;
+}
+
+.search-buttons button:hover {
+    opacity: 1;
+    border-color: #c4c4c4;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+}
+
+.languages {
+    color:#6d6d6d;
+    font-family: arial, sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+.languages p {
+
+    padding: 0;
+    margin: 0;
+}
+
+.languages a {
+    padding: 0 3px;
+    margin: 0;
+}
+
+/* -----------------------------------footer------------------------------ */
+
+footer {
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 0;
+    align-items: normal;
+    position: fixed;
+    width: 100vw;
+    max-height: 20vh;
+    bottom: 0;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background-color: #f2f2f2;
+}
+
+@media screen and (max-height: 600px) {
+    footer {
+        /* bottom: 0; */
+        position: unset;
+        height: 20vh;
+    }
+}
+
+
+footer div {
+    flex: 1;
+    padding: 0;
+    margin: 0;
+
+}
+
+footer .upper {
+    border-bottom: 1px solid #c4c4c4;
+    padding: 5px 30px;
+}
+
+footer .lower {
+    display: flex;
+    justify-content:space-between;
+}
+
+@media screen and (max-width: 600px) {
+    footer .lower {
+        display: flex;
+        flex-direction: column;
+        justify-content:unset;
+    }
+
+    footer .lower .left {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    footer .lower .right {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;   
+    }
+}
+
+
+footer .lower ul {
+    flex-direction: row;
+    list-style: none;
+    display: flex;
+    padding: 15px;
+    margin: 0;
+}
+
+footer .lower .left {
+    display: flex;
+    justify-items: left;
+    margin: 0;
+}
+
+footer .lower .right {
+    display: flex;
+    justify-items: right;
+    margin: 0;
+}
+
+footer div ul a {
+    padding: 15px;
+}
