@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    #myCheckbox {
+      display: none;
+    }
+
+    #myCheckbox + label {
+      position: relative;
+      padding-left: 30px; /* Adjust the padding to accommodate the image */
+      cursor: pointer;
+      font-size: 18px;
+      user-select: none;
+    }
+
+    #myCheckbox + label::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 20px;
+      height: 20px;
+      background: url('images/image.svg') no-repeat center center; /* Replace 'checkmark.png' with your image */
+      background-size: cover;
+    }
+
+    #myCheckbox:checked + label::before {
+      background-color: #e74c3c; /* Change color when checked, if needed */
+    }
+
+    #myElement {
+      width: 200px;
+      height: 100px;
+      background-color: #3498db;
+      color: #fff;
+      font-size: 18px;
+      margin-top: 20px;
+      display: none;
+    }
+
+    #myCheckbox:checked + label + #myElement {
+      background-color: #e74c3c; /* Change color when checked, if needed */
+      display: block;
+    }
+  </style>
+</head>
+<body>
+
+  <input type="checkbox" id="myCheckbox">
+  <label for="myCheckbox"></label>
+  <div id="myElement">This is my element</div>
+
+</body>
+</html>
